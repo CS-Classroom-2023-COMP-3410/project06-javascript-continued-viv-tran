@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Trainer - Race Mode</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customizable Keyboard Trainer</h1>
+
+        <div class="settings">
+            <label for="difficulty">Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="start">Start</button>
+        </div>
+
+        <!-- WPM Display -->
+        <div class="wpm-display">
+            <p>WPM: <span id="wpm">0</span></p>
+        </div>
+
+        <!-- Race Track -->
+        <div class="race-track">
+            <div class="racecar" id="racecar">🏎️</div>
+            <div class="finish-line">🏁</div>
+        </div>
+
+        <div class="typing-area">
+            <p id="text-display"></p>
+            <textarea id="text-input" placeholder="Start typing..." disabled></textarea>
+        </div>
+
+        <div class="results">
+            <p>Final WPM: <span id="final-wpm">0</span></p>
+            <p>Accuracy: <span id="accuracy">100</span>%</p>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
